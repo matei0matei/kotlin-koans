@@ -23,5 +23,5 @@ fun todoTask4(collection: Collection<Int>): Nothing = TODO(
     references = { JavaCode4().task4(collection) })
 
 fun task4(collection: Collection<Int>): Boolean {
-    return collection.count { number -> number % 2 == 0 } != 0
+    return collection.any { number -> number % 2 == 0 }
 }
